@@ -6,12 +6,11 @@ import {
 import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware  from 'redux-saga';
 
-import rootSaga from './sagas'
+import rootSaga from './sagas';
 
 import user from './reducers/user';
 
 const sagaMiddleware = createSagaMiddleware();
-
 
 const rootReducer = combineReducers({
   user,
